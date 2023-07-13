@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+    background-color: #fffcf4;
+}
+.topmost{
+    height: 60px;
+    width: 100%;
+}
+.topcontainer{
+    height: 500px;
+    position: relative;
+    width: 100%;
+    background-color: #e0dccc;
+}
+.container{
+    padding: 20px;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 300px 300px ;
+    grid-template-columns: 300px 300px 300px 300px ;
+    overflow: hidden;
+}
+.lineUp{
+    padding-top: 100px;
+    font-weight: 100;
+    color: #242424;
+    margin: 0px;
+    left: 10px;
+    font-family: 'Fraunces', serif;
+    font-size: 65px;
+    margin-bottom: 0px;
+    animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.pancake{
+  float: left;
+  width: 50%;
+} 
+.days{
+    position: relative;
+    border-radius: 10px;
+    background-color: #c8c494;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.day{
+    color: #2c2c2c;
+    font-family: 'Fraunces', serif; 
+    font-weight: lighter;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.day:hover{
+    color: #666666;
+}
+.food{
+  margin: 0px;
+  padding: 0px;
+    text-align: center;
+    color: #2c2c2c;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+}
+.pic{
+    padding: 10px;
+    width: 250px;
+}
+/* [1] The container */
+.days {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .days img {
+    transition: transform 1.5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .days:hover img {
+    transform: scale(1.2);
+  }
+  #monday{
+    margin-left: 30px;
+    padding: 0px;
+    width: 230px;
+  }
+  #tuesday{
+    width: 270px;
+    padding: 0px;
+    margin: 0px;
+  }
+  #wed{
+    padding-left: 0px;
+    width: 270px;
+  }
+  #sat{
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 230px;
+  }
+  .header{
+    margin-top: 30px;
+    text-align: center;
+    color: #565140;
+    font-size: 30px;
+    font-style:'Fraunces', serif;
+    opacity: 30%;
+  }
+  .bottomcontainer{
+    padding-top: 20px;
+    text-align: center;
+    bottom: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: #f0e49c;
+  }
+  .ritika{
+    color:#eaf6f6;
+    text-align: center;
+}
+#fri{
+  padding-left: 30px;
+  width: 220px;
+}
+.footer-link{
+ 
+  font-family: 'Merriweather', serif;
+  color:#605444;
+  margin:10px 20px 10px 20px;
+  text-decoration: none;
+}
+.footer-link:hover{
+  color:#fcfcc4;
+}
+#sun{
+  padding: 0px;
+  padding-left: 20px;
+  margin: 0px;
+  width: 250px;
+}
