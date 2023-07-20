@@ -159,3 +159,52 @@ body{
   margin: 0px;
   width: 250px;
 }
+@media (max-width:1250px){
+    .pricing-plan{
+        width: 400px;
+        height: 300px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+        }
+        .topcontainer{
+          height: 300px;
+          position: relative;
+          width: 100%;
+          background-color: #e0dccc;
+      }
+      .lineUp{
+        padding-top: 40px;
+        font-weight: 100;
+        color: #242424;
+        margin: 0px;
+        left: 10px;
+        font-family: 'Fraunces', serif;
+        font-size: 40px;
+        margin-bottom: 0px;
+        animation: 2s anim-lineUp ease-out;
+    }
+    @keyframes anim-lineUp {
+      0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
+      20% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    .pancake{
+      float: left;
+      width: 60%;
+    } 
+  }
