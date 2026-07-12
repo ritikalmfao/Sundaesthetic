@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'Muthiara';
+    src: url('Muthiara.otf') format('opentype');
+}
 body{
     margin: 0px;
     background-color: #fffcf4;
+    overflow-x: hidden;
 }
 .topmost{
     height: 60px;
@@ -12,13 +17,19 @@ body{
     width: 100%;
     background-color: #e0dccc;
 }
+.topcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .container{
     padding: 20px;
     margin-bottom: 100px;
     display: grid;
     gap: 2rem;
     grid-template-rows: 300px 300px ;
-    grid-template-columns: 300px 300px 300px 300px ;
+    grid-template-columns: 300px 300px 300px 300px ;  
+
     overflow: hidden;
 }
 .lineUp{
@@ -27,10 +38,14 @@ body{
     color: #242424;
     margin: 0px;
     left: 10px;
-    font-family: 'Fraunces', serif;
+    font-family: 'muthiara';
     font-size: 65px;
     margin-bottom: 0px;
+    margin-top:0px;
     animation: 2s anim-lineUp ease-out;
+    position: relative;
+    top: -70px;
+    
 }
 @keyframes anim-lineUp {
   0% {
@@ -50,7 +65,6 @@ body{
   }
 }
 .pancake{
-  float: left;
   width: 50%;
 } 
 .days{
@@ -92,12 +106,12 @@ body{
   
   /* [2] Transition property for smooth transformation of images */
   .days img {
-    transition: transform 1.5s ease;
+    transition: transform 0.5s ease;
   }
   
   /* [3] Finally, transforming the image when container gets hovered */
   .days:hover img {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
   #monday{
     margin-left: 30px;
